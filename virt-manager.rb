@@ -7,6 +7,8 @@ class VirtManager < Formula
   sha256 "2b6fe3d90d89e1130227e4b05c51e6642d89c839d3ea063e0e29475fd9bf7b86"
   revision 5
 
+  head "https://github.com/virt-manager/virt-manager.git"
+
   depends_on "docutils" => :build
   depends_on "gettext" => :build
 
@@ -97,18 +99,3 @@ class VirtManager < Formula
   end
 end
 __END__
-diff --git a/virtManager/virtmanager.py b/virtManager/virtmanager.py
-index f6d538b..1f01aa5 100755
---- a/virtManager/virtmanager.py
-+++ b/virtManager/virtmanager.py
-@@ -136,8 +136,8 @@ def parse_commandline():
-     parser.add_argument("--debug", action="store_true",
-         help="Print debug output to stdout (implies --no-fork)",
-         default=False)
--    parser.add_argument("--no-fork", action="store_true",
--        help="Don't fork into background on startup")
-+    parser.add_argument("--fork", dest='no_fork', action="store_false",
-+        help="Fork into background on startup")
-
-     parser.add_argument("--show-domain-creator", action="store_true",
-         help="Show 'New VM' wizard")
