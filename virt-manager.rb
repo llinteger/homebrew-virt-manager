@@ -50,8 +50,7 @@ class VirtManager < Formula
   end
 
   resource "PyGObject" do
-    url "https://files.pythonhosted.org/packages/51/2f/4d5d5afb7000b9151e33952b59163c9389bd867ac6fe85d62f85831fa061/PyGObject-3.40.1.tar.gz"
-    sha256 "6fb599aa59ceb9dd05fafb0d72b3862943e7d5e85c8ef6c74856bc6d4321cbab"
+    url "https://gitlab.gnome.org/GNOME/pygobject.git"
   end
 
   resource "requests" do
