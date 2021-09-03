@@ -10,6 +10,9 @@ A set of [homebrew][homebrew] formulae to install [`virt-manager`][virt-manager]
     brew install virt-viewer
     virt-manager -c test:///default
 
+## NOTE:
+Do not forget to export 'export XDG_DATA_DIRS="/opt/homebrew/share/'.
+
 ## FAQs
 
 #### Why can't I connect to a remote URI?

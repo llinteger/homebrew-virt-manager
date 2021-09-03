@@ -50,7 +50,7 @@ class VirtManager < Formula
   end
 
   resource "PyGObject" do
-    url "https://gitlab.gnome.org/GNOME/pygobject.git"
+    url "https://github.com/Damenly/pygobject.git", branch: "arm64e_tmp_fix"
   end
 
   resource "requests" do
