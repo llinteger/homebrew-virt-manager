@@ -15,6 +15,13 @@ Do not forget `export XDG_DATA_DIRS="/opt/homebrew/share/"`.
 
 ## FAQs
 
+#### Why icons are missing?
+
+Backup your `/usr/local/share/icons` first. Then `rm -rf /usr/local/share/icons`.
+
+Finally link your homebrew icons directory to `/usr/local/share/icons`.
+For arm64 `ln -sf /opt/homebrew/share/icons /usr/local/share/icons` then restart virt-manager.
+
 #### Why can't I connect to a remote URI?
 
 When connecting to remote URIs, you probably need to override the `libvirt` socket location, see [www.jedi.be][jedi].
