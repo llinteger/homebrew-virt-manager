@@ -11,7 +11,7 @@ A set of [homebrew][homebrew] formulae to install [`virt-manager`][virt-manager]
     virt-manager -c test:///default
 
 ## NOTE:
-Do not forget to export 'export XDG_DATA_DIRS="/opt/homebrew/share/'.
+Do not forget `export XDG_DATA_DIRS="/opt/homebrew/share/"`.
 
 ## FAQs
 
