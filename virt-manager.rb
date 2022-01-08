@@ -23,6 +23,7 @@ class VirtManager < Formula
   depends_on "python"
   depends_on "spice-gtk"
   depends_on "vte3"
+  depedns_on "pygobject3"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz"
@@ -47,10 +48,6 @@ class VirtManager < Formula
   resource "pycairo" do
     url "https://files.pythonhosted.org/packages/bc/3f/64e6e066d163fbcf13213f9eeda0fc83376243335ea46a66cefd70d62e8f/pycairo-1.20.1.tar.gz"
     sha256 "1ee72b035b21a475e1ed648e26541b04e5d7e753d75ca79de8c583b25785531b"
-  end
-
-  resource "PyGObject" do
-    url "https://github.com/Damenly/pygobject.git", branch: "arm64e_tmp_fix"
   end
 
   resource "requests" do
