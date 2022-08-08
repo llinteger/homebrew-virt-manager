@@ -6,7 +6,7 @@ A set of [homebrew][homebrew] formulae to install [`virt-manager`][virt-manager]
 ## Usage
 
     brew tap Damenly/homebrew-virt-manager
-    brew install virt-manager --HEAD
+    brew install virt-manager
     brew install virt-viewer
     virt-manager -c test:///default
 
