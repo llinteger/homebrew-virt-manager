@@ -72,6 +72,9 @@ class VirtManager < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3")
+
+    system "python3", "-m", "venv", "--upgrade-deps", "#{libexec}"
+
     venv.pip_install resources
 
     # virt-manager uses distutils, doesn't like --single-version-externally-managed
