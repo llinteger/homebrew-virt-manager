@@ -6,8 +6,10 @@ A set of [homebrew][homebrew] formulae to install [`virt-viewer`][virt-viewer] o
 Homebrew-core now has officical support for virt-manager.
 
 
-The virt-viewer in this repo is copied from (jouve's repo) [https://github.com/jouve/homebrew-virt-manager].
-I personally suggest you guys use the above tap. 
+The virt-viewer in this repo is copied from [jouve's repo](https://github.com/jouve/homebrew-virt-manager).
+
+
+I personally suggest that you guys use the above tap.
 
 ## Usage
 
