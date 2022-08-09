@@ -1,7 +1,13 @@
 homebrew-virt-manager
 =====================
 
-A set of [homebrew][homebrew] formulae to install [`virt-manager`][virt-manager] and [`virt-viewer`][virt-viewer] on Mac OSX.
+A set of [homebrew][homebrew] formulae to install [`virt-viewer`][virt-viewer] on Mac OSX.
+
+Homebrew-core now has officical support for virt-manager.
+
+
+The virt-viewer in this repo is copied from (jouve's repo) [https://github.com/jouve/homebrew-virt-manager].
+I personally suggest you guys use the above tap. 
 
 ## Usage
 
