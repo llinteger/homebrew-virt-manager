@@ -9,6 +9,7 @@ class VirtViewer < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
+  depends_on "gobject-introspection" => :build
 
   depends_on "desktop-file-utils"
   depends_on "glib"
@@ -22,7 +23,7 @@ class VirtViewer < Formula
   patch :DATA
 
   def install
-    system "meson", "setup", "builddir", *std_meson_args
+    system "meson", "setup", "builddir", *std_meson_args, "-Dspice=enabled"
     system "ninja", "-C", "builddir", "install", "-v"
   end
 
